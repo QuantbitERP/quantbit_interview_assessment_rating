@@ -303,4 +303,15 @@ require_type_annotated_api_methods = True
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "=", "Job Opening"],
+            ["module", "=", "Qauntbit Interview Assisment"]
+        ]
+    }
+]
+doctype_js = {
+    "Job Opening": "public/js/job_opening.js"
+}

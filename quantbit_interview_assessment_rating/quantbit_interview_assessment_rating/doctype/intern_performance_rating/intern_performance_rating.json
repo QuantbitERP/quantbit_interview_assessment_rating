@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:intern_name",
+ "creation": "2026-09-10 18:01:41.170650",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ypb1",
+  "amended_from",
+  "intern",
+  "intern_name",
+  "from_date",
+  "mentor",
+  "column_break_jnmu",
+  "department",
+  "evaluation_date",
+  "to_date",
+  "categories",
+  "section_break_lalf",
+  "criteria_table",
+  "section_break_kjdc",
+  "total_weightage",
+  "total_score",
+  "overall_rating",
+  "column_break_swbf",
+  "overall_percentage",
+  "recommendation",
+  "section_break_fpgp",
+  "final_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ypb1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Intern Performance Rating",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "intern",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Intern",
+   "options": "User"
+  },
+  {
+   "fetch_from": "intern.full_name",
+   "fieldname": "intern_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Intern Name",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mentor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mentor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_jnmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evaluation_date",
+   "fieldtype": "Date",
+   "label": "Evaluation Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "categories",
+   "fieldtype": "Table MultiSelect",
+   "label": "Categories",
+   "options": "Intern Performance Criteria Table"
+  },
+  {
+   "fieldname": "section_break_lalf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "criteria_table",
+   "fieldtype": "Table",
+   "label": "Criteria Table",
+   "options": "Intern Performance Criteria Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_kjdc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_weightage",
+   "fieldtype": "Percent",
+   "label": "Total Weightage"
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Float",
+   "label": "Total Score"
+  },
+  {
+   "fieldname": "overall_rating",
+   "fieldtype": "Data",
+   "label": "Overall Rating"
+  },
+  {
+   "fieldname": "column_break_swbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overall_percentage",
+   "fieldtype": "Percent",
+   "label": "Overall Percentage"
+  },
+  {
+   "fieldname": "recommendation",
+   "fieldtype": "Select",
+   "label": "Recommendation",
+   "options": "\nContinue Internship\nExtend Internship\nConsider for Full Time\nNot Recommended"
+  },
+  {
+   "fieldname": "section_break_fpgp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_remarks",
+   "fieldtype": "Small Text",
+   "label": "Final Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-10 18:01:41.170650",
+ "modified_by": "Administrator",
+ "module": "Quantbit Interview Assessment Rating",
+ "name": "Intern Performance Rating",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
