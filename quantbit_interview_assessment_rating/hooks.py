@@ -308,7 +308,7 @@ fixtures = [
         "dt": "Custom Field",
         "filters": [
             ["dt", "=", "Job Opening"],
-            ["module", "=", "Qauntbit Interview Assisment"]
+            ["module", "=", "Quantbit Interview Assessment Rating"]
         ]
     }
 ]

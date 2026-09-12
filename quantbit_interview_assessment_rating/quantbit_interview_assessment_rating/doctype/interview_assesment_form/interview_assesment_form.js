@@ -2,6 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Interview Assesment Form", {
+    
 
     onload: function(frm) {
         if (frm.is_new()) {
